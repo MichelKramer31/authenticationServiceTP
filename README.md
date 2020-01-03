@@ -5,9 +5,16 @@ Pareil pour requette d'identification qui comprends également les requetes d'aj
 
 # Fonctionnement
 
+Les services reposes sur un principes de "handlers" de requetes. Chaque traitement possible sur une requete est séparé dans un handler.
+Un handler peut choisir de répondre à une requete si il détermine qu'elle lui est déstiné, ou de peut la redirigé vers le handler suivant.
+Il est possible de chainer les handlers comme bon nous semble.
+On peut également en créer de nouveau afin d'ajouter des nouvelles fonctionnalités à nos services. 
+
 ## Comment demarrer les serveurs
 
 1. Vérifier l'environement d'éxecution
+
+Etant donné qu'il s'agit d'un projet Maven, n'oublié pas d'importer les dépendances avant de vouloir lancer les programmes principaux.
 
 Assurer vous d'abord de ne pas avoir les ports suivant d'ouvert sur la machine qui va lancer les serveurs :
    * `28414` : port du serveur Checker en UDP et TCP
