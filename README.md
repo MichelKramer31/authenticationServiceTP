@@ -1,5 +1,7 @@
 # Welcome on doc !
 Vous trouverez sur cette petite documentation complémentaire à la java doc, les instructions necessaires à la mise en oeuvre des serveurs d'identification
+Par serveur d'identification on parle en fait de l'ensemble des servers du TPs.
+Pareil pour requette d'identification qui comprends également les requetes d'ajout, modification, suppression ...
 
 # Fonctionnement
 
